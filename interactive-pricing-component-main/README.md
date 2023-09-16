@@ -11,3 +11,4 @@ Here's a preview if it doesn't work on your device(I hope it does) . . . **cheer
 
 https://github.com/kabir-afk/interactive-pricing-component-main/assets/123084434/c003146a-d718-4348-a31d-093f490edb9a
 
+See live : [Here](https://kabir-afk.github.io/frontend-mentor-challenges/interactive-pricing-component-main/)
