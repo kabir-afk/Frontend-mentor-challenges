@@ -1,0 +1,288 @@
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --Soft-Cyan: hsl(174, 77%, 80%);
+  /* (Full Slider Bar) */
+  --Strong-Cyan: hsl(174, 86%, 45%);
+  /* (Slider Backround) */
+  --Light-Grayish-Red: hsl(14, 92%, 95%);
+  /* (Discount Background) */
+  --Light-Red: hsl(15, 100%, 70%);
+  /* (Discount Text) */
+  --Pale-Blue: hsl(226, 100%, 87%);
+  /* (CTA Text) */
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  /* (Pricing Component Background) */
+  --Very-Pale-Blue: hsl(230, 100%, 99%);
+  /* (Main Background) */
+  --Light-Grayish-Blue: hsl(224, 65%, 95%);
+  /* (Empty Slider Bar) */
+  --Light-Grayish-Blue: hsl(223, 50%, 87%);
+  /* (Toggle Background) */
+  --Grayish-Blue: hsl(225, 20%, 60%);
+  /* (Text) */
+  --Dark-Desaturated-Blue: hsl(227, 35%, 25%);
+  /* (Text & CTA Background) */
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+  background: url(images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-position-y: -20vh;
+  background-color: var(--Very-Pale-Blue);
+  color: var(--Grayish-Blue);
+}
+h1 {
+  color: var(--Dark-Desaturated-Blue);
+}
+.push--right {
+  margin-left: auto;
+}
+.heading {
+  font-size: 1.75rem;
+  margin-top: 2.5em;
+  line-height: 10px;
+}
+.heading + p {
+  font-size: 0.9375rem;
+}
+.heading,
+.heading + p {
+  /* border: 2px solid rebeccapurple; */
+  text-align: center;
+  /* font-weight: 800; */
+}
+.image {
+  /* border: 2px solid aqua; */
+  width: fit-content;
+  position: absolute;
+  top: 1em;
+  left: 44.5%;
+  z-index: -1;
+}
+.pricing-component {
+  /* border: 2px solid mediumblue; */
+  margin: 5em auto;
+  width: 35%;
+  background-color: var(--White);
+  padding: 2em 0;
+  border-radius: 5px;
+}
+.pricing-per-page {
+  /* border: 2px solid mediumaquamarine; */
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+}
+.page-views {
+  text-transform: uppercase;
+}
+/* Slider css */
+/* Example custom styles for the nouislider.js slider */
+/* You need to inspect the generated HTML to find the appropriate classes or IDs */
+
+/* Style the slider track */
+#slider {
+  background-color: var(--Soft-Cyan);
+  margin: 1em auto 2em;
+  width: 90%;
+  height: 5px;
+  border: none;
+}
+
+/* Style the slider handles */
+#slider .noUi-handle {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--Strong-Cyan);
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100px;
+  box-shadow: 0px 10px 20px var(--Strong-Cyan);
+}
+#slider .noUi-handle:focus,
+#slider .noUi-handle:active {
+  background-color: hsla(174, 86%, 45%, 0.8);
+}
+/* Remove the default vertical lines inside the handle */
+#slider .noUi-handle::before,
+#slider .noUi-handle::after {
+  display: none;
+}
+
+/* Style the slider connect bar */
+#slider .noUi-connect {
+  background-color: var(--Grayish-Blue);
+}
+#slider .noUi-origin:last-child {
+  display: none;
+}
+.pricing-offers {
+  /* border: 2px solid khaki; */
+  width: 80%;
+  margin: 0 55%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.switch {
+  cursor: pointer;
+  width: 2.5em;
+  height: 1.25em;
+  border-radius: 10px;
+  border: none;
+  background: var(--Grayish-Blue);
+  position: relative;
+}
+.slider {
+  cursor: pointer;
+  width: 0.9em;
+  height: 0.9em;
+  background-color: var(--White);
+  border-radius: 100px;
+  position: absolute;
+  top: 0.175em;
+  left: 0.15em;
+}
+.switch:hover {
+  background-color: var(--Strong-Cyan);
+}
+.discount {
+  /* border: 2px solid var(--Light-Red); */
+  background-color: var(--Light-Grayish-Red);
+  color: var(--Light-Red);
+  border-radius: 20px;
+}
+.CTA-container {
+  /* border: 2px solid slateblue; */
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.CTA-text {
+  line-height: 10px;
+}
+.CTA-text img {
+  /* border: 2px solid navy; */
+  padding-right: 0.3rem;
+}
+.CTA-btn {
+  border: none;
+  border-radius: 20px;
+  background-color: var(--Dark-Desaturated-Blue);
+  color: var(--Pale-Blue);
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+  padding: 0.75em 2em;
+}
+.CTA-btn:hover {
+  cursor: pointer;
+  color: var(--White);
+}
+@media screen and (max-width: 1000px) {
+  body {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    background-position-x: 0.5%;
+    background-position-y: -9vh;
+  }
+  .heading {
+    /* border: 2px solid brown; */
+    font-size: 1.25rem;
+    width: 80%;
+    margin: 5em auto 0;
+    line-height: normal;
+  }
+  .heading + p {
+    /* border: 2px solid brown; */
+    margin: 1em auto;
+    width: 55%;
+  }
+  .image {
+    top: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .pricing-component {
+    width: 90%;
+    margin-top: 15%;
+  }
+  .pricing-per-page {
+    display: block;
+  }
+  .page-views {
+    /* border: 2px solid tomato; */
+    margin-left: 30%;
+  }
+  #slider {
+    width: 85%;
+    height: 7px;
+    position: relative;
+    top: -6em;
+  }
+  #pricing {
+    position: relative;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-32.5%);
+  }
+  #pricing + span {
+    /* border: 2px solid firebrick; */
+    position: relative;
+    top: -1.2em;
+    left: 55%;
+    transform: translateX(-30%);
+  }
+  .pricing-offers{
+    font-size: 0.9375rem;
+    width: 90%;
+    margin-top:-3em ;
+    margin-bottom: 2em;
+  }
+  hr{
+    display: none;
+  }
+  .CTA-container{
+    font-size: 0.9375rem;
+    flex-direction: column;
+    align-items: unset;
+    text-align: center;
+  }
+  .CTA-btn{
+    width: 60%;
+    margin: auto;
+  }
+}
