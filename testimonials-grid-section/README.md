@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://kabir-afk.github.io/frontend-mentor-challenges/testimonials-grid-section/)
+- Live Site URL: [live site URL](https://kabir-afk.github.io/frontend-mentor-challenges/testimonials-grid-section/)
 
 ## My process
 
