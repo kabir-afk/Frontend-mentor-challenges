@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main>
+      <div class="hero_container">
+        <div class="hero_container-balance">
+          <div class="balance-headings">
+            <h1>$921.48</h1>
+            <p>My balance</p>
+          </div>
+          <div class="image"><img src="images/logo.svg" alt="logo" /></div>
+        </div>
+        <div class="hero_container-expenditure">
+          <h2 class="brown">Spending - Last 7 days</h2>
+          <div class="week">
+            <div class="day">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              mon
+            </div>
+            <div class="day">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              tue
+            </div>
+            <div class="day">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              wed
+            </div>
+            <div class="day">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              thu
+            </div>
+            <div class="day">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              fri
+            </div>
+            <div class="day">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              sat
+            </div>
+            <div class="day">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              sun
+            </div>
+          </div>
+          <hr />
+          <div class="total-expenditure">
+            <div class="total_expenditure-this-month">
+              <p>Total this month</p>
+              <h1 class="brown">$478.33</h1>
+            </div>
+            <div class="total_expenditure-comparison">
+              <span class="brown font-weight-700">+2.4%</span>
+              <p>from last month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
