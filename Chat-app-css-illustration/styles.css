@@ -1,0 +1,353 @@
+:root {
+    --Pale-Violet: hsl(276, 100%, 81%);
+    /* (sub-heading at the top of the app UI) */
+
+    --Moderate-Violet: hsl(276, 55%, 52%);
+    /* (chat on the left) */
+
+    --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+    /* (chat on the right) */
+
+    --Grayish-Blue: hsl(206, 6%, 79%);
+    /* (placeholder text) */
+
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    /* (main heading) */
+
+    --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+    /* (paragraph) */
+
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+    /* These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet: hsl(270, 20%, 96%);
+    /* (app background) */
+    --Very-Dark-Desaturated-violet: hsl(271, 36%, 24%);
+    /* (submit button background) */
+    --Very-Light-Magenta: hsl(289, 100%, 72%);
+    /* (radio button outline) */
+}
+
+body {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.blob {
+    width: 30%;
+    height: 620px;
+    background: linear-gradient(var(--Light-Magenta), var(--Light-Violet));
+    border-radius: 0 0 500px 500px;
+    margin: -5% 0 0 -5%;
+}
+
+.blob-2 {
+    width: 35%;
+    height: 620px;
+    background: var(--Light-Grayish-Violet);
+    border-radius: 0 0 500px 500px;
+    margin: 2% 0 0 73%;
+    transform: rotate(180deg);
+}
+
+.phone {
+    width: 18%;
+    height: 475px;
+    background-color: var(--White);
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin: -37.5% 20%;
+    padding: 0.85em 0;
+    box-shadow: 10px 10px 20px grey;
+}
+
+.screen {
+    width: 90%;
+    height: 480px;
+    background-color: var(--Light-Grayish-Violet);
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+    font-size: 0.55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 0 0.75em 0 0.75em;
+}
+
+
+.header {
+    position: relative;
+    width: 90%;
+    background: linear-gradient(90deg, var(--Light-Violet), var(--Light-Magenta));
+    border-radius: 20px 20px 5px 5px;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+.header::after {
+    content: '';
+    width: 50%;
+    height: 25%;
+    background-color: var(--White);
+    position: absolute;
+    top: 0;
+    left: 25%;
+    border-radius: 0 0 100px 100px;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    width: 9px;
+    height: 3px;
+    background-color: var(--White);
+    border-radius: 100px;
+    position: absolute;
+    left: 5%;
+    transform-origin: top left;
+    margin-right: 1em;
+}
+
+.up {
+    transform: rotate(-60deg);
+}
+
+.down {
+    transform: rotate(60deg) translate(-2px, -4px);
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12.5%;
+    border: 2px solid var(--White);
+    border-radius: 100px;
+    margin-left: 1.5em;
+    margin-right: 0.5em;
+}
+
+#avatar {
+    clip-path: circle(50%);
+}
+
+
+.name {
+    color: var(--White);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.sub-heading {
+    color: var(--Pale-Violet);
+    font-size: 0.65rem;
+}
+
+.options {
+    width: 2.5px;
+    aspect-ratio: 1;
+    background-color: var(--White);
+    border-radius: 50%;
+    box-shadow: 0 4px var(--White), 0 8px var(--White);
+    margin-left: 2.5em;
+}
+
+.sender {
+    width: 60%;
+    color: var(--Moderate-Violet);
+    background-color: hsl(181, 97%, 223%);
+    border-radius: 10px 10px 10px 4px;
+}
+
+.receiver {
+    width: 65%;
+    background-color: hsl(160, 0%, 240%);
+    color: var(--Desaturated-Dark-Violet);
+    border-radius: 10px 10px 4px 10px;
+    align-self: flex-end;
+}
+
+#msg-1 {
+    width: 68%;
+}
+
+#msg-2 {
+    width: 38%;
+}
+
+.sender,
+.receiver {
+    padding: 0.5em 0.7em 0.5em 0.7em;
+}
+
+.flex {
+    width: 70%;
+    display: flex;
+    gap: 0 8.5px;
+    align-self: flex-end;
+}
+
+.image {
+    width: 30%;
+    border-radius: 15px;
+}
+
+.hero {
+    position: absolute;
+    z-index: 1;
+    font-family: 'Rubik', sans-serif;
+    width: 35%;
+    margin: 5% 45%;
+}
+
+.hero-heading {
+    font-size: 2rem;
+    color: var(--Very-Dark-Desaturated-Violet);
+    font-weight: 700;
+}
+
+.hero-text {
+    color: var(--Dark-Grayish-Violet);
+    line-height: 1.5em;
+}
+
+.purchase {
+    width: 69%;
+    background: linear-gradient(90deg, var(--Light-Magenta), var(--Light-Violet));
+    border-radius: 10px 10px 10px 4px;
+    color: var(--White);
+    padding: 1em;
+    display: flex;
+}
+
+.purchase-flex {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 0.4em;
+}
+
+.price {
+    margin-left: auto;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.radio-button {
+    width: 10px;
+    aspect-ratio: 1;
+    background-color: transparent;
+    border: 2px solid var(--Very-Light-Magenta);
+    border-radius: 100px;
+    margin-right: 0.4em;
+}
+
+.text-box {
+    color: var(--Grayish-Blue);
+    background-color: var(--White);
+    padding: 0.3em 0.4em 0.3em 2em;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.text-box article {
+    margin-top: 0.8em;
+}
+
+.submit-button {
+    width: 25px;
+    aspect-ratio: 1;
+    border-radius: 100px;
+    background-color: var(--Very-Dark-Desaturated-Violet);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.submit-button::after,
+.submit-button::before {
+    content: '';
+    width: 9px;
+    height: 3px;
+    background-color: var(--White);
+    border-radius: 100px;
+    position: absolute;
+    top: 37.5%;
+    left: 35%;
+    transform-origin: top right;
+}
+
+.submit-button::after {
+    transform: rotate(-45deg) translatex(-1px) translatey(0px);
+}
+
+.submit-button::before {
+    transform: rotate(45deg) translateY(0px) translateX(2.2px);
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .blob {
+        width: 50%;
+        transform: scale(2);
+        margin: -27em 0 0 -5em;
+    }
+
+    .blob-2 {
+        position: relative;
+        z-index: -1;
+        width: 50%;
+        height: 250px;
+        transform: rotate(180deg) scale(2);
+        margin: -25em 0 0 25em;
+    }
+
+    .phone {
+        width: 68%;
+        position: absolute;
+        top: 12.5em;
+        right: -7%;
+    }
+
+    .hero {
+        width: 90%;
+        position: relative;
+        margin: 25em auto;
+    }
+
+    .hero-heading {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+}
