@@ -1,0 +1,181 @@
+:root {
+  /* ## Colors */
+  /* ### Primary */
+
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+body {
+  margin: 0%;
+  height: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--Light-grayish-blue-1);
+}
+.hero-container {
+  /* border: 2px solid royalblue; */
+  background-color: var(--White);
+  width: 52%;
+  margin: 4% auto;
+  padding: 0.75em 2em;
+  border-radius: 10px;
+}
+.notification-bar {
+  /* border: 2px solid aqua; */
+  display: flex;
+  align-items: center;
+}
+.notification-item--push-right {
+  margin-left: auto;
+}
+.total-notifications {
+  /* border: 2px solid seagreen; */
+  border-radius: 10px;
+  padding: 0.125rem 0.75rem;
+  background-color: var(--Blue);
+  color: var(--White);
+  font-size: 1.25rem;
+}
+.read-or-unread {
+  color: var(--Grayish-blue);
+  font-weight: 800;
+}
+.user_notification {
+  /* border: 2px solid tomato; */
+  display: flex;
+  align-items: center;
+  color: var(--Grayish-blue);
+  border-radius: 10px;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+}
+.user_name {
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+}
+.unread {
+  background-color: var(--Very-light-grayish-blue);
+}
+.bold {
+  color: var(--Dark-grayish-blue);
+  font-weight: 800;
+}
+.Chess-club {
+  color: var(--Blue);
+  font-weight: 800;
+}
+.avatar {
+  /* border: 2px solid lawngreen; */
+  width: 7%;
+  margin-right: 1em;
+}
+.user-content {
+  /* border: 2px solid blueviolet; */
+  position: relative;
+}
+.user-content > p {
+  margin-top: 0;
+}
+.notification {
+  color: transparent;
+  font-size: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: var(--Red);
+  vertical-align:middle;
+}
+.user_pvt-msg {
+  border: 2px solid var(--Light-grayish-blue-2);
+  border-radius: 7.5px;
+  color: var(--Dark-grayish-blue);
+  padding: 1em;
+  width: 90%;
+  margin-left: auto;
+  margin-top: -1em;
+}
+.bold:hover,
+.read-or-unread:hover,
+.read-or-unread:focus,
+.user_name:hover {
+  cursor: pointer;
+  color: var(--Blue);
+}
+.user_notification:nth-child(3) span:last-of-type:hover,
+img[alt="girl-playing-chess"] {
+  cursor: pointer;
+}
+.user_pvt-msg:hover {
+  cursor: pointer;
+  background-color: var(--Light-grayish-blue-1);
+  border: 2px solid var(--Light-grayish-blue-1);
+}
+@media screen and (max-width: 768px) {
+  body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: unset;
+  }
+  .hero-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: unset;
+  }
+  h1 {
+    font-size: calc(0.4vw + 1rem);
+  }
+  .total-notifications{
+    font-size: 1rem;
+  }
+  .user_notification{
+    align-items:self-start;
+  }
+  .avatar{
+    width: 15%;
+    margin-right: 0.5em;
+  }
+  .hero-container .user_notification:nth-child(1) > .avatar{
+    width: 25%;
+  }
+  .hero-container .user_notification:nth-child(2) > .avatar{
+    width: 12.5%;
+  }
+  .hero-container .user_notification:nth-child(6) > .avatar{
+    width: 17%;
+  }
+  .hero-container .user_notification:nth-child(6) > .avatar:last-of-type{
+    position: relative;
+    left: 4%;
+  }
+  .hero-container .user_notification:nth-child(6) > .avatar:last-of-type > img{
+    border-radius: 10px;
+  }
+  .hero-container .user_notification:nth-child(7) > .avatar{
+    width: 30%;
+  }
+  .hero-container .user_notification:nth-child(8) > .avatar{
+    width: 12.5%;
+  }
+  .user_pvt-msg{
+    width: 81%;
+  }
+}
