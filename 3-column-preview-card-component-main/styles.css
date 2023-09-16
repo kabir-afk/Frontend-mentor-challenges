@@ -1,0 +1,104 @@
+:root {
+
+    --primary-color-orange: hsl(31, 77%, 52%);
+    --primary-color-cyan: hsl(184, 100%, 22%);
+    --primary-color-green: hsl(179, 100%, 13%);
+
+    --secondary-color-white: hsla(0, 0%, 100%, 0.75);
+    /* paragraphs */
+    --secondary-color-gray: hsl(0, 0%, 95%);
+    /* background, headings, buttons */
+}
+html{
+    overflow: hidden;
+}
+body {
+    /* border: 2px solid royalblue; */
+    background: var(--secondary-color-gray);
+    font-size: 0.9375rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+#orange {
+    background: var(--primary-color-orange);
+}
+
+#cyan {
+    background: var(--primary-color-cyan);
+}
+
+#green {
+    background: var(--primary-color-green);
+}
+
+.orange {
+    color: var(--primary-color-orange);
+}
+
+.cyan {
+    color: var(--primary-color-cyan);
+}
+
+.green {
+    color: var(--primary-color-green);
+}
+
+.container {
+    display: flex;
+    margin: 8.25% auto;
+    width: 65%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.hero-box {
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2em 0;
+}
+
+.hero-sub-box {
+    /* border: 2px solid sandybrown; */
+    width: 72%;
+    height: fit-content;
+}
+
+.hero-title {
+    color: var(--secondary-color-gray);
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+}
+
+.description {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--secondary-color-white);
+    margin: 1em 0 3.5em 0;
+    line-height: 25px;
+}
+
+.button {
+    background-color: var(--secondary-color-gray);
+    border-radius: 100px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid var(--secondary-color-white);
+    width: 70%;
+    padding: 0.5em 0;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: transparent;
+    color: var(--secondary-color-white);
+}
+@media(max-width:800px){
+    html{
+        overflow-y: scroll;
+    }
+    .container{display: block;}
+    .description{margin-bottom: 1em;}
+}
