@@ -1,0 +1,138 @@
+:root {
+
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+
+    /* 1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */
+
+}
+
+main {
+    /* border: 2px dashed rebeccapurple; */
+    width: 80%;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-sizing: border-box;
+    gap: 1.75em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.template {
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 1.25em;
+    font-size: 0.8125rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--Moderate-violet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    /* background-position-x: 63%; */
+    background-position-x: 82.5%;
+}
+
+.two {
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+.three {
+    background-color: var(--Light-gray);
+    grid-row-start: span 2;
+}
+
+.four {
+    background-color: var(--Light-grayish-blue);
+}
+
+.five {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+.avatar-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid orangered; */
+}
+
+.info {
+    /* border: 2px solid yellowgreen; */
+    margin-left: -1.5em;
+
+}
+
+.name {
+    font-weight: 500;
+    color: var(--Light-grayish-blue);
+    line-height: 1em;
+}
+
+.qualifications {
+    line-height: 0.1em;
+    color: hsla(210, 46%, 95%, 0.5);
+}
+
+.hero-heading {
+    width: 80%;
+    /* border: 2px solid firebrick; */
+    font-weight: 600;
+    color: var(--White);
+}
+
+.hero-text {
+    color: hsla(210, 46%, 95%, 0.7);
+}
+
+.name-dark {
+    color: var(--Very-dark-blackish-blue);
+    line-height: 1em;
+}
+
+.qualifications-dark {
+    color: hsla(219, 29%, 14%, 0.5);
+    line-height: 0.1em;
+}
+
+.hero-heading--dark {
+    color: var(--Very-dark-blackish-blue);
+}
+
+.hero-text-dark {
+    color: hsla(219, 29%, 14%, 0.7);
+}
+
+#image {
+    width: 50%;
+    border: 2.5px solid var(--White);
+    border-radius: 100px;
+}
+footer{
+    position: relative;
+    margin-top:-4em;
+}
+
+@media screen and (max-width:600px) {
+    main {
+        display: block;
+    }
+
+    .template {
+        margin-bottom: 1.5em;
+    }
+}
