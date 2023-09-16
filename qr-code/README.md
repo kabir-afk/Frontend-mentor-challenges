@@ -14,7 +14,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://kabir-afk.github.io/frontend-mentor-challenges/qr-code/)
+- Live Site URL: [live site ](https://kabir-afk.github.io/frontend-mentor-challenges/qr-code/)
 
 ## My process
 
