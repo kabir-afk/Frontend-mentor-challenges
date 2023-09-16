@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="hero-container">
+        <div class="user_input">
+          <form>
+            <p class="font-color-grayish-cyan">Bill</p>
+              <div class="flex"><img src="images/icon-dollar.svg" alt="icon-dollar"><input type="number" name="Bill" id="Bill" min="0" placeholder="0"/></div>
+            <p class="font-color-grayish-cyan">Select Tip %</p>
+            <div class="grid">
+              <label for="Tip-1" class="grid-items">
+                <input type="radio" name="Tip" value="5" id="Tip-1">5%</input>
+              </label>
+              <label for="Tip-2" class="grid-items">
+                <input type="radio" name="Tip" value="10" id="Tip-2">10%</input>
+              </label>
+              <label for="Tip-3" class="grid-items">
+                <input type="radio" name="Tip" value="15" id="Tip-3">15%</input>
+              </label>
+              <label for="Tip-4" class="grid-items">
+                <input type="radio" name="Tip" value="25" id="Tip-4">25%</input>
+              </label>
+              <label for="Tip-5" class="grid-items">
+                <input type="radio" name="Tip" value="50" id="Tip-5">50%</input>
+              </label>
+              <div class="grid-items">
+                <input
+                  type="number"
+                  name="Custom"
+                  id="Custom"
+                  placeholder="Custom"
+                  oninput="update()"
+                />
+              </div>
+            </div>
+            <div class="error-msg-flex">
+              <p class="font-color-grayish-cyan">Number of People</p><p class="error-msg">Can't be zero</p>
+            </div>
+          <div class="flex">
+            <img src="images/icon-person.svg" alt="icon-person">
+            <input
+              type="number"
+              name="num-of-people"
+              id="num-of-people"
+              min="0"
+              placeholder="0"
+              oninput="update()"
+            />
+          </div>
+        </div>
+        <div class="user_output-container">
+          <div class="user_output-content">
+            <div class="user_output-tip">
+              Tip Amount
+              <span class="font-color-grayish-cyan style-display-block"
+              >/ person</span
+              >
+            </div>
+            <div class="user_output-tip-display" id="user_output-tip-display-1">$0.00</div>
+            <div class="user_output-tip">
+              Total
+              <span class="font-color-grayish-cyan style-display-block"
+              >/ person</span
+              >
+            </div>
+            <div class="user_output-tip-display" id="user_output-tip-display-2">$0.00</div>
+          </div>
+          <button class="user_output-reset" type="reset">Reset</button>
+        </div>
+      </div>
+    </form>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.frontendmentor.io/profile/kabir-afk">solitary_coder</a>.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
