@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-[Live Site](https://kabir-afk.github.io/tip-calculator-app-main/)
+[Live Site](https://kabir-afk.github.io/frontend-mentor-challenges/tip-calculator-app-main/)
 
 ## My process
 
