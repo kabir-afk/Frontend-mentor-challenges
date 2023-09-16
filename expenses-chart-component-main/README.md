@@ -37,7 +37,7 @@ Your users should be able to:
 
 ### Links
 
-[Live](https://kabir-afk.github.io/expenses-chart-component-main/)
+[Live](https://kabir-afk.github.io/frontend-mentor-challenges/expenses-chart-component-main/)
 
 ## My process
 
