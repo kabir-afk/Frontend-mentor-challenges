@@ -34,7 +34,7 @@ Your users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://kabir-afk.github.io/frontend-mentor-challenges/Order-summary-card-component/)
+- Live Site URL: [live site URL ](https://kabir-afk.github.io/frontend-mentor-challenges/Order-summary-card-component/)
 
 ## My process
 
