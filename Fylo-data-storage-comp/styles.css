@@ -1,0 +1,191 @@
+:root {
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position-y: 250px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    /* border: 2px solid slateblue; */
+    margin: 12.5% auto;
+    gap: 2.5%;
+}
+
+.options {
+    width: 20%;
+    background-color: var(--Dark-Blue);
+    padding: 2em 0em 2em 2em;
+    border-radius: 10px 100px 10px 10px;
+}
+
+.options--flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* border: 2px solid rebeccapurple; */
+    gap: 5%;
+    margin-top: 1.5em;
+}
+
+.image {
+    box-sizing: border-box;
+    width: 12.5%;
+    aspect-ratio: 1;
+    padding: 0 1.25em;
+    background-color: var(--Very-Dark-Blue);
+    /* border: 2px solid red; */
+    border-radius: 7.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storage {
+    width: 35%;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.storage--container {
+    width: 80%;
+    background-color: var(--Dark-Blue);
+    /* border: 2px solid rosybrown; */
+    color: var(--Pale-Blue);
+    font-size: 0.875rem;
+}
+
+.empty-loader {
+    width: 100%;
+    height: 1em;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.full-loader {
+    width: 70%;
+    height: 0.7em;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 100px;
+    margin-left: 0.25em;
+    padding-right: 0.1em;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation: load 2s linear;
+}
+
+.full-loader::after {
+    content: '';
+    width: 0.6em;
+    aspect-ratio: 1;
+    background-color: var(--Pale-Blue);
+    border-radius: 100px;
+    position: absolute;
+}
+
+.flex {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+}
+
+.chat_box {
+    width: 30%;
+    /* background-color: var(--Pale-Blue); */
+    background-color: white;
+    color: var(--Grayish-Blue);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.6em;
+    border-radius: 10px 10px 0 10px;
+    position: relative;
+    margin-left: 47.5%;
+    margin-top: -5%;
+}
+
+.triangle {
+    width: 0;
+    border-bottom: 15px solid white;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    position: absolute;
+    top: 90%;
+    left: 135px;
+    transform: rotate(45deg);
+}
+
+.chat-no {
+    font-size: 2rem;
+    color: var(--Very-Dark-Blue);
+    margin-right: 0.2em;
+}
+
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background-image: url(images/bg-mobile.png);
+        background-position: unset;
+    }
+
+    .container {
+        display: block;
+        margin-top: 40%;
+    }
+
+    .options {
+        width: 80%;
+        margin: auto;
+    }
+
+    .storage {
+        width: 90%;
+        margin: 1em auto;
+        padding-bottom: 2em;
+    }
+
+    .chat_box {
+        width: 40%;
+        border-radius: 10px;
+        position:absolute;
+        top:69%;
+        left: -20%;
+    }
+
+    .triangle {
+        display: none;
+    }
+}
