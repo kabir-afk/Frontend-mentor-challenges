@@ -1,0 +1,21 @@
+@import '../Variables.scss';
+
+#screen {
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-family: inherit;
+    color: $White;
+    background-color: $Very-dark-desaturated-blue-screen-bg;
+    font-size: 2rem;
+    text-align: right;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+#screen::-webkit-inner-spin-button,
+#screen::-webkit-outer-spin-button{
+    display: none;
+}
