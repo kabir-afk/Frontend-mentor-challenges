@@ -1,0 +1,42 @@
+@import '../Variables.scss';
+
+.keypad{
+    // border: 2px solid fuchsia;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+    background-color: $Very-dark-desaturated-blue-screen-bg;
+    background-color: $Very-dark-desaturated-blue-toggle-bg-keypad-bg;
+    padding: calc(1em + 5px);
+    border-radius: 5px;
+}
+.key{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: $Light-grayish-orange;
+    box-shadow: 0 5px $Grayish-orange;
+    color: $Very-dark-grayish-blue;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.3em;
+    font-size: 2rem;
+    font-family: inherit;
+}
+.reset{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.blue-bg{
+    background-color: $Desaturated-dark-blue-key-background;
+    box-shadow: 0 5px $Desaturated-dark-blue-key-shadow;
+    color: $White;
+}
+.equal{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: $Red;
+    box-shadow: 0 5px $Dark-red;
+    color: $White;
+}
