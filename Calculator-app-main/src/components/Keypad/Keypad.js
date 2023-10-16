@@ -18,7 +18,7 @@ function Keypad() {
             <button className="key" onClick={keypress}>7</button>
             <button className="key" onClick={keypress}>8</button>
             <button className="key" onClick={keypress}>9</button>
-            <button className="key blue-bg" onClick={keypress}>DEL</button>
+            <button className="key blue-bg" onClick={keypress}>DELETE</button>
             <button className="key" onClick={keypress}>4</button>
             <button className="key" onClick={keypress}>5</button>
             <button className="key" onClick={keypress}>6</button>
