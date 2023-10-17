@@ -49,4 +49,26 @@ nav {
 .themeSwitcherButton .themeSwitcherBtn_circle:hover {
   cursor: pointer;
   background-color: rgb(250, 107, 93);
+}
+
+.theme-2 nav {
+  color: hsl(60, 10%, 19%);
+}
+.theme-2 .themeSwitcherButton {
+  justify-content: center;
+  background-color: hsl(0, 5%, 81%);
+}
+.theme-2 .themeSwitcherButton .themeSwitcherBtn_circle {
+  background-color: hsl(25, 98%, 40%);
+}
+
+.theme-3 nav {
+  color: hsl(52, 100%, 62%);
+}
+.theme-3 .themeSwitcherButton {
+  justify-content: right;
+  background-color: hsl(268, 71%, 12%);
+}
+.theme-3 .themeSwitcherButton .themeSwitcherBtn_circle {
+  background-color: hsl(176, 100%, 44%);
 }/*# sourceMappingURL=Navbar.css.map */

@@ -1,16 +1,15 @@
 @import '../Variables.scss';
 
-.keypad{
+.keypad {
     // border: 2px solid fuchsia;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1em;
-    background-color: $Very-dark-desaturated-blue-screen-bg;
     background-color: $Very-dark-desaturated-blue-toggle-bg-keypad-bg;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
     padding: calc(1em + 5px);
     border-radius: 5px;
 }
-.key{
+.key {
     border: none;
     outline: none;
     cursor: pointer;
@@ -23,20 +22,70 @@
     font-size: 2rem;
     font-family: inherit;
 }
-.reset{
+
+.reset {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-.blue-bg{
+.blue-bg {
     background-color: $Desaturated-dark-blue-key-background;
     box-shadow: 0 5px $Desaturated-dark-blue-key-shadow;
     color: $White;
 }
-.equal{
+
+.equal {
     grid-column-start: 3;
     grid-column-end: 5;
     background-color: $Red;
     box-shadow: 0 5px $Dark-red;
     color: $White;
+}
+
+.theme-2 {
+    .keypad {
+        background-color: $Grayish-red-toggle-bg-keypad-bg;
+    }
+
+    .key {
+        background-color: $Light-grayish-yellow;
+        box-shadow: 0 5px $Dark-grayish-orange;
+        color: $Very-dark-grayish-yellow;
+    }
+
+    .blue-bg {
+        background-color: $Dark-moderate-cyan;
+        box-shadow: 0 5px $Very-dark-cyan;
+        color: $White;
+    }
+
+    .equal {
+        background-color: $Orange-key-bg-toggle;
+        box-shadow: 0 5px $Dark-orange-key-shadow;
+        color: $White;
+    }
+}
+
+.theme-3 {
+    .keypad {
+        background-color: $Very-dark-violet-toggle-bg-keypad-bg-screen-bg;
+    }
+
+    .key {
+        background-color: $Very-dark-violet;
+        box-shadow: 0 5px $Dark-magenta;
+        color: $Light-yellow;
+    }
+
+    .blue-bg {
+        background-color: $Dark-violet;
+        box-shadow: 0 5px $Vivid-magenta;
+        color: $White;
+    }
+
+    .equal {
+        background-color: $Pure-cyan-key-bg-toggle;
+        box-shadow: 0 5px $Soft-cyan-key-shadow;
+        color: $Very-dark-blue;
+    }
 }

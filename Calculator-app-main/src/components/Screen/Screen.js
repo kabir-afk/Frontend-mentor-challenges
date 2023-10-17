@@ -1,7 +1,7 @@
 import "./Screen.css";
 import { useState } from "react";
 
-function Screen() {
+function Screen(props) {
   const [initialValue, setValue] = useState("");
   const addCommas = (event)=>{
     const inputValue = event.target.value.replace(/,/g, '');

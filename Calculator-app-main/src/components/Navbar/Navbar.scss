@@ -62,3 +62,28 @@ nav {
         }
     }
 }
+
+.theme-2{
+    nav{
+        color: $Very-dark-grayish-yellow;
+    }
+    .themeSwitcherButton{
+        justify-content: center;
+        background-color: $Grayish-red-toggle-bg-keypad-bg;
+        .themeSwitcherBtn_circle{
+            background-color: $Orange-key-bg-toggle;
+        }
+    }
+}
+.theme-3{
+    nav{
+        color: $Light-yellow;
+    }
+    .themeSwitcherButton{
+        justify-content: right;
+        background-color: $Very-dark-violet-toggle-bg-keypad-bg-screen-bg;
+        .themeSwitcherBtn_circle{
+            background-color: $Pure-cyan-key-bg-toggle;
+        }
+    }
+}
