@@ -17,4 +17,14 @@
 #screen::-webkit-inner-spin-button,
 #screen::-webkit-outer-spin-button {
   display: none;
+}
+
+.theme-2 #screen {
+  color: hsl(60, 10%, 19%);
+  background-color: hsl(0, 0%, 93%);
+}
+
+.theme-3 #screen {
+  color: hsl(52, 100%, 62%);
+  background-color: hsl(268, 71%, 12%);
 }/*# sourceMappingURL=Screen.css.map */

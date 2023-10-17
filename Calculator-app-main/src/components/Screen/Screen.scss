@@ -15,7 +15,22 @@
     padding: 0.5em;
     border-radius: 5px;
 }
+
 #screen::-webkit-inner-spin-button,
-#screen::-webkit-outer-spin-button{
+#screen::-webkit-outer-spin-button {
     display: none;
+}
+
+.theme-2 {
+    #screen {
+        color: $Very-dark-grayish-yellow;
+        background-color: $Very-light-gray;
+    }
+}
+
+.theme-3 {
+    #screen {
+        color: $Light-yellow;
+        background-color: $Very-dark-violet-toggle-bg-keypad-bg-screen-bg;
+    }
 }
