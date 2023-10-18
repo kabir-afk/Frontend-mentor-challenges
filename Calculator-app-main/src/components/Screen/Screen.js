@@ -14,7 +14,7 @@ function Screen(props) {
         type="text"
         name="screen"
         id="screen"
-        value={initialValue}
+        value={props.inputValue}
         onChange={addCommas}
       />
     </div>

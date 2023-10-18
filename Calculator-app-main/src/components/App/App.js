@@ -7,6 +7,8 @@ import { useState } from "react";
 function App() {
   const themes = ["", "theme-2", "theme-3"];
   const [themeIndex, setThemeIndex] = useState(0);
+  const[inputValue,setInputValue] = useState("");
+
   const changeTheme = () => {
     setThemeIndex((themeIndex + 1) % themes.length);
     if (themeIndex == 2) {
@@ -17,13 +19,25 @@ function App() {
       document.body.style.backgroundColor = "hsl(268, 75%, 9%)";
     }
   };
+
+  const keyPress = (key)=>{
+    setInputValue(inputValue + key);
+  }
+  const handleReset = ()=>{
+    setInputValue('');
+  }
+  const calculate = ()=>{
+    const output = eval(inputValue)
+    setInputValue(output);
+  }
+
   return (
     <>
       <main>
         <div className="hero-container">
           <Navbar changeTheme={changeTheme} currentTheme={themes[themeIndex]} />
-          <Screen currentTheme={themes[themeIndex]}/>
-          <Keypad currentTheme={themes[themeIndex]}/>
+          <Screen currentTheme={themes[themeIndex]} inputValue = {inputValue}/>
+          <Keypad currentTheme={themes[themeIndex]} keyPress = {keyPress} resetField = {handleReset} calculate = {calculate}/>
         </div>
       </main>
     </>
