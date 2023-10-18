@@ -17,7 +17,7 @@ function Keypad(props) {
           <button className="key" onClick={keypress} value = {"9"}>
             9
           </button>
-          <button className="key blue-bg" onClick={keypress}>
+          <button className="key blue-bg" onClick={props.del}>
             DEL
           </button>
           <button className="key" onClick={keypress} value = {"4"}>

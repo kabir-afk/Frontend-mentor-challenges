@@ -32,6 +32,10 @@ function App() {
     const output = eval(inputValue);
     setInputValue(output);
   };
+  const del = () => {
+    const output = inputValue.slice(0, inputValue.length - 1);
+    setInputValue(output);
+  };
 
   return (
     <>
@@ -44,6 +48,7 @@ function App() {
             keyPress={keyPress}
             resetField={handleReset}
             calculate={calculate}
+            del={del}
           />
         </div>
       </main>
