@@ -9,6 +9,7 @@
     padding: calc(1em + 5px);
     border-radius: 5px;
 }
+
 .key {
     border: none;
     outline: none;
@@ -21,6 +22,10 @@
     padding: 0.3em;
     font-size: 2rem;
     font-family: inherit;
+
+    &:hover {
+        background-color: rgb(255, 255, 255);
+    }
 }
 
 .reset {
@@ -32,6 +37,10 @@
     background-color: $Desaturated-dark-blue-key-background;
     box-shadow: 0 5px $Desaturated-dark-blue-key-shadow;
     color: $White;
+
+    &:hover {
+        background-color: rgb(162, 178, 227);
+    }
 }
 
 .equal {
@@ -40,8 +49,14 @@
     background-color: $Red;
     box-shadow: 0 5px $Dark-red;
     color: $White;
+    &:hover{
+        background-color: rgb(249, 108, 91);
+    }
 }
 
+.blue-bg,.equal{
+    font-size: 1.3rem;
+}
 .theme-2 {
     .keypad {
         background-color: $Grayish-red-toggle-bg-keypad-bg;
@@ -51,18 +66,27 @@
         background-color: $Light-grayish-yellow;
         box-shadow: 0 5px $Dark-grayish-orange;
         color: $Very-dark-grayish-yellow;
+        &:hover{
+            background-color: rgb(255, 255, 255);
+        }
     }
 
     .blue-bg {
         background-color: $Dark-moderate-cyan;
         box-shadow: 0 5px $Very-dark-cyan;
         color: $White;
+        &:hover{
+            background-color: rgb(98, 191, 189);
+        }
     }
 
     .equal {
         background-color: $Orange-key-bg-toggle;
         box-shadow: 0 5px $Dark-orange-key-shadow;
         color: $White;
+        &:hover{
+            background-color: rgb(255, 139, 56);
+        }
     }
 }
 
@@ -75,17 +99,26 @@
         background-color: $Very-dark-violet;
         box-shadow: 0 5px $Dark-magenta;
         color: $Light-yellow;
+        &:hover{
+            background-color: rgb(107, 52, 152);
+        }
     }
 
     .blue-bg {
         background-color: $Dark-violet;
         box-shadow: 0 5px $Vivid-magenta;
         color: $White;
+        &:hover{
+            background-color: rgb(134, 49, 156);
+        }
     }
 
     .equal {
         background-color: $Pure-cyan-key-bg-toggle;
         box-shadow: 0 5px $Soft-cyan-key-shadow;
         color: $Very-dark-blue;
+        &:hover{
+            background-color: rgb(148, 255, 249);
+        }
     }
 }

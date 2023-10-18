@@ -72,6 +72,9 @@ nav {
         background-color: $Grayish-red-toggle-bg-keypad-bg;
         .themeSwitcherBtn_circle{
             background-color: $Orange-key-bg-toggle;
+            &:hover{
+                background-color: rgb(255, 140, 51);
+            }
         }
     }
 }
@@ -84,6 +87,9 @@ nav {
         background-color: $Very-dark-violet-toggle-bg-keypad-bg-screen-bg;
         .themeSwitcherBtn_circle{
             background-color: $Pure-cyan-key-bg-toggle;
+            &:hover{
+                background-color: rgb(146, 255, 250);
+            }
         }
     }
 }
