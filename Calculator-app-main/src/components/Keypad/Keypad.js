@@ -6,7 +6,7 @@ function Keypad(props) {
     props.keyPress(e.target.value);
   }  
   return (
-    <div className={`${props.currentTheme}`}>
+    <div className={props.currentTheme}>
         <div className="keypad keypad-bg">
           <button className="key" onClick={keypress} value = {"7"}>
             7

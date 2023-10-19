@@ -21,9 +21,28 @@ function App() {
   };
 
   const keyPress = (key) => {
-    const oldValue = (inputValue + key).replace(/,/g, "");
-    const formattedValue = oldValue.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    setInputValue(formattedValue);
+    let arr = [];
+    arr = inputValue + key;
+    let lastChar = arr[arr.length - 1];
+    let secLastChar = arr[arr.length - 2];
+    if (
+      (lastChar == "*" ||
+        lastChar == "/" ||
+        lastChar == "+" ||
+        lastChar == "." ||
+        lastChar == "-") &&
+      (secLastChar == "*" ||
+        secLastChar == "/" ||
+        secLastChar == "+" ||
+        secLastChar == "." ||
+        secLastChar == "-")
+    ) {
+      handleReset();
+    } else {
+      const oldValue = (inputValue + key).replace(/,/g, "");
+      const formattedValue = oldValue.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      setInputValue(formattedValue);
+    }
   };
   const handleReset = () => {
     setInputValue("");
