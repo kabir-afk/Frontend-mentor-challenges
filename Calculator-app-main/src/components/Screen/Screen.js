@@ -9,6 +9,7 @@ function Screen(props) {
         name="screen"
         id="screen"
         defaultValue={props.inputValue}
+        disabled
       />
     </div>
   );

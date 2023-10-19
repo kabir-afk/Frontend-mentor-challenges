@@ -23,4 +23,9 @@ body {
   margin: 15vh auto;
   width: 37%;
   height: max-content;
+  @media screen and (max-width:850px) {
+    margin: 5vh auto;
+    width: 85%;
+    height: 90vh;
+  }
 }

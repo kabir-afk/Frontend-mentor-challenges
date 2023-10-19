@@ -10,10 +10,12 @@
     background-color: $Very-dark-desaturated-blue-screen-bg;
     font-size: 2rem;
     text-align: right;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin: 0.5em 0;
     padding: 0.5em;
     border-radius: 5px;
+    @media screen and (max-width:850px) {
+        margin: 0.75em 0;
+    }
 }
 
 #screen::-webkit-inner-spin-button,

@@ -6,6 +6,11 @@
   padding: calc(1em + 5px);
   border-radius: 5px;
 }
+@media screen and (max-width: 850px) {
+  .keypad {
+    height: 27rem;
+  }
+}
 
 .key {
   border: none;
@@ -22,6 +27,11 @@
 }
 .key:hover {
   background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 850px) {
+  .key {
+    border-radius: 5px;
+  }
 }
 
 .reset {
