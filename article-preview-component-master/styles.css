@@ -77,6 +77,10 @@ body {
   cursor: pointer;
 }
 
+#share-svg-path {
+  fill: hsl(214, 17%, 51%);
+}
+
 .share-icons {
   display: flex;
   justify-content: space-evenly;
@@ -90,6 +94,7 @@ body {
   position: absolute;
   top: -4.5rem;
   left: 61%;
+  visibility: hidden;
 }
 .share-icons p {
   text-transform: uppercase;
@@ -120,4 +125,8 @@ body {
 
 .darken {
   background-color: hsl(214, 17%, 51%);
+}
+
+.share-icons-visible {
+  visibility: visible;
 }/*# sourceMappingURL=styles.css.map */
