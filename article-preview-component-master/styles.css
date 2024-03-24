@@ -24,6 +24,25 @@ body {
   background-color: white;
   border-radius: 10px;
 }
+@media screen and (max-width: 1115px) {
+  .wrapper-main {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 775px) {
+  .wrapper-main {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .wrapper-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10% auto;
+  }
+}
 
 .image {
   width: 45%;
@@ -34,17 +53,45 @@ body {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 375px) {
+  .image {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+  }
+}
 
 .text {
   width: 55%;
   padding: 0 1.5em;
 }
+@media screen and (max-width: 1380px) {
+  .text {
+    padding-bottom: 1.5em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .text {
+    width: 100%;
+    padding: none;
+  }
+}
 .text h1 {
   color: hsl(217, 19%, 35%);
+}
+@media screen and (max-width: 375px) {
+  .text h1 {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
 }
 .text p {
   font-weight: 500;
   color: hsl(212, 23%, 69%);
+}
+@media screen and (max-width: 375px) {
+  .text p {
+    font-size: 0.9rem;
+  }
 }
 
 .author {
@@ -75,6 +122,13 @@ body {
   border-radius: 100px;
   aspect-ratio: 1;
   cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+@media screen and (max-width: 775px) {
+  .author button {
+    right: 5%;
+  }
 }
 
 #share-svg-path {
@@ -100,6 +154,21 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 775px) {
+  .share-icons {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+  }
+  .share-icons img {
+    padding-left: 1.75em;
+  }
+}
 .share-icons::before {
   content: "";
   border-top: 15px solid hsl(217, 19%, 35%);
@@ -113,13 +182,6 @@ body {
 @media screen and (max-width: 775px) {
   .share-icons::before {
     display: none;
-  }
-}
-@media screen and (max-width: 775px) {
-  .share-icons {
-    top: 0%;
-    left: 0%;
-    width: 100%;
   }
 }
 

@@ -5,8 +5,6 @@ $Desaturated-Dark-Blue: hsl(214, 17%, 51%);
 $Grayish-Blue: hsl(212, 23%, 69%);
 $Light-Grayish-Blue: hsl(210, 46%, 95%);
 
-// - Font size: 13px
-
 *,
 *::before,
 *::after {
@@ -24,10 +22,30 @@ img {
     flex-direction: $flex-direction;
 }
 
-@mixin mobile {
+@mixin mediaQueries ($breakpoint) {
 
-    @media screen and (max-width:775px) {
-        @content
+    @if ($breakpoint ==775) {
+        @media screen and (max-width:775px) {
+            @content
+        }
+    }
+
+    @else if($breakpoint ==1380) {
+        @media screen and (max-width:1380px) {
+            @content
+        }
+    }
+
+    @else if($breakpoint ==1115) {
+        @media screen and (max-width:1115px) {
+            @content
+        }
+    }
+
+    @else {
+        @media screen and (max-width:375px) {
+            @content
+        }
     }
 }
 
@@ -44,6 +62,19 @@ body {
     width: 50.69%;
     background-color: white;
     border-radius: 10px;
+
+    @include mediaQueries(1115) {
+        width: 65%;
+    }
+
+    @include mediaQueries(775) {
+        width: 90%;
+    }
+
+    @include mediaQueries(375) {
+        @include flex(center, center, column);
+        margin: 10% auto;
+    }
 }
 
 .image {
@@ -57,6 +88,11 @@ body {
         width: 100%;
         height: 100%;
     }
+
+    @include mediaQueries(375) {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
 }
 
 .text {
@@ -64,14 +100,34 @@ body {
     width: 55%;
     padding: 0 1.5em;
 
+    @include mediaQueries(1380) {
+        padding-bottom: 1.5em;
+    }
+
+    @include mediaQueries(375) {
+        width: 100%;
+        padding: none;
+    }
+
     h1 {
         color: $Very-Dark-Grayish-Blue;
+
+        @include mediaQueries(375) {
+            font-size: 1.125rem;
+            font-weight: 700;
+        }
     }
 
     p {
+        // border: 2px solid black;
         font-weight: 500;
-        color: $Grayish-Blue
+        color: $Grayish-Blue;
+
+        @include mediaQueries(375) {
+            font-size: 0.9rem;
+        }
     }
+
 }
 
 .author {
@@ -105,6 +161,11 @@ body {
         border-radius: 100px;
         aspect-ratio: 1;
         cursor: pointer;
+        position: relative;
+        z-index: 3;
+        @include mediaQueries(775){
+            right: 5%;
+        }
     }
 }
 
@@ -129,6 +190,17 @@ body {
         letter-spacing: 2px;
     }
 
+    @include mediaQueries(775) {
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        @include flex(left, center, row);
+        img{
+            padding-left: 1.75em;
+        }
+    }
+
     &::before {
         content: '';
         border-top: 15px solid $Very-Dark-Grayish-Blue;
@@ -139,16 +211,11 @@ body {
         top: 98%;
         z-index: 2;
 
-        @include mobile() {
+        @include mediaQueries(775) {
             display: none;
         }
     }
 
-    @include mobile {
-        top: 0%;
-        left: 0%;
-        width: 100%;
-    }
 }
 
 .darken {
