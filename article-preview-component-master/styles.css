@@ -23,11 +23,12 @@ body {
   width: 50.69%;
   background-color: white;
   border-radius: 10px;
-  overflow: hidden;
 }
 
 .image {
   width: 45%;
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
 }
 .image img {
   width: 100%;
@@ -52,6 +53,7 @@ body {
   align-items: center;
   flex-direction: row;
   margin-top: 1.5em;
+  position: relative;
 }
 .author_avatar img {
   width: 40px;
@@ -73,4 +75,49 @@ body {
   border-radius: 100px;
   aspect-ratio: 1;
   cursor: pointer;
+}
+
+.share-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+  background-color: hsl(217, 19%, 35%);
+  box-shadow: 5px 5px 15px hsl(212, 23%, 69%);
+  border-radius: 10px;
+  padding: 0.2em 1em;
+  position: absolute;
+  top: -4.5rem;
+  left: 61%;
+}
+.share-icons p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.share-icons::before {
+  content: "";
+  border-top: 15px solid hsl(217, 19%, 35%);
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  filter: drop-shadow(5px 5px 5px hsl(212, 23%, 69%));
+  position: absolute;
+  top: 98%;
+  z-index: 2;
+}
+@media screen and (max-width: 775px) {
+  .share-icons::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 775px) {
+  .share-icons {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+  }
+}
+
+.darken {
+  background-color: hsl(214, 17%, 51%);
 }/*# sourceMappingURL=styles.css.map */
